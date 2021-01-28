@@ -13,7 +13,7 @@
       <Position x="-0.44" y="-34.53" z="20.78" />
       <Rotation x="-47.3221245" y="-0" z="-0" />
       <controlLaw>
-        <LawCamControlEditor lookSpeedH="2" lookSpeedV="2" zoomSpeed="2" dragSpeed="3" />
+        <LawCamControlEditor lookSpeedH="2" lookSpeedV="2" zoomSpeed="2" dragSpeed="5" />
       </controlLaw>
     </TrialCamPlayer>
   </player>
