@@ -1,0 +1,634 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trial xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <scene meshName="Paris">
+    <Position x="-1.86835861" y="-9.486596" z="7.59579945" />
+    <Rotation x="0" y="0" z="0" />
+    <recordingFile>Output_{USER}_{ITT}.csv</recordingFile>
+    <endingConditions>
+      <condition parameter="time" test="less" value="0" />
+    </endingConditions>
+  </scene>
+  <player>
+    <TrialCamPlayer mesh="CamPlayer" radius="0.33" in_sim="false">
+      <Position x="-15.92" y="-3.26" z="3.33" />
+      <Rotation x="-24.3110142" y="-4.68424741E-06" z="282.703369" />
+      <controlLaw>
+        <LawCamControlEditor lookSpeedH="2" lookSpeedV="2" zoomSpeed="8" dragSpeed="12" />
+      </controlLaw>
+    </TrialCamPlayer>
+  </player>
+  <robots>
+    <robot>
+      <TrialRegularRobot mesh="Pepper" radius="0.5" in_sim="true">
+        <Position x="-1.37" y="-11.77" z="1.76" />
+        <Rotation x="0" y="0" z="35.42201" />
+        <controlLaw>
+          <LawFake />
+        </controlLaw>
+      </TrialRegularRobot>
+    </robot>
+  </robots>
+  <agents>
+    <agent>
+      <TrialRegularAgent mesh="f019" radius="0.33" visualVariation="8" animationOffset="0.124413371" heightOffset="0.04265505">
+        <Position x="1.97223485" y="9.48096752" z="1.01" />
+        <Rotation x="0" y="-0" z="113.735718" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.04844487" accelerationMax="0.651756465" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="4.81718731" y="10.8392277" z="1.3" />
+              <Goal x="-18.2361145" y="-8.159201" z="1.3" />
+              <Goal x="-18.1513519" y="-7.680752" z="1.3" />
+              <Goal x="4.93092728" y="-19.5835552" z="1.3" />
+              <Goal x="2.476316" y="10.7635136" z="1.3" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" PolicyID="0" radius="0.33" prefered_speed="1.1" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f020" radius="0.33" visualVariation="8" animationOffset="0.5474524" heightOffset="0.00201458484">
+        <Position x="3.72904372" y="7.53611" z="1.01" />
+        <Rotation x="-0" y="0" z="204.402588" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.0751791" accelerationMax="0.93348825" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="-18.8217945" y="-7.043013" z="1.3" />
+              <Goal x="4.491912" y="10.969202" z="1.3" />
+              <Goal x="4.49645329" y="10.8505087" z="1.3" />
+              <Goal x="-17.5084686" y="-8.090119" z="1.3" />
+              <Goal x="6.404132" y="-19.99502" z="1.3" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" PolicyID="0" radius="0.33" prefered_speed="1.1" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m019" radius="0.33" visualVariation="2" animationOffset="0.3362462" heightOffset="-0.02590995">
+        <Position x="2.06014872" y="11.6036844" z="1.01" />
+        <Rotation x="-0" y="0" z="220.818115" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.28326464" accelerationMax="0.8448968" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="3.85798955" y="9.110175" z="1.3" />
+              <Goal x="4.46776724" y="10.32825" z="1.3" />
+              <Goal x="-17.8233929" y="-7.4589963" z="1.3" />
+              <Goal x="6.38201427" y="-20.8176785" z="1.3" />
+              <Goal x="-16.1243286" y="-8.42973" z="1.3" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" PolicyID="0" radius="0.33" prefered_speed="1.1" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f020" radius="0.33" visualVariation="5" animationOffset="0.5902651" heightOffset="0.0116597824">
+        <Position x="1.45671093" y="7.944418" z="1.01" />
+        <Rotation x="-0" y="0" z="235.1366" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.21615565" accelerationMax="0.84585" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="4.178092" y="-21.3951759" z="1.3" />
+              <Goal x="-17.4643955" y="-6.596492" z="1.3" />
+              <Goal x="5.135751" y="-21.249403" z="1.3" />
+              <Goal x="-17.5557384" y="-8.623329" z="1.3" />
+              <Goal x="4.71386051" y="-21.5598774" z="1.3" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" PolicyID="0" radius="0.33" prefered_speed="1.1" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m019" radius="0.33" visualVariation="2" animationOffset="0.7187449" heightOffset="-0.04087845">
+        <Position x="2.93851924" y="10.3658323" z="1.01" />
+        <Rotation x="0" y="-0" z="3.01154137" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.36501122" accelerationMax="0.755862" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="5.1671834" y="8.85596752" z="1.3" />
+              <Goal x="-18.76731" y="-6.469503" z="1.3" />
+              <Goal x="3.18640113" y="11.1894283" z="1.3" />
+              <Goal x="6.39353466" y="-21.36565" z="1.3" />
+              <Goal x="4.783253" y="-21.12837" z="1.3" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" PolicyID="0" radius="0.33" prefered_speed="1.1" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m020" radius="0.33" visualVariation="7" animationOffset="0.464796841" heightOffset="-0.0339299776">
+        <Position x="1.89429915" y="10.2028389" z="1.01" />
+        <Rotation x="-0" y="0" z="346.735626" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.28053057" accelerationMax="0.898714066" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="-16.6570282" y="-8.276432" z="1.3" />
+              <Goal x="-16.1456528" y="-6.628135" z="1.3" />
+              <Goal x="-16.97726" y="-8.112027" z="1.3" />
+              <Goal x="3.11175442" y="9.508166" z="1.3" />
+              <Goal x="2.91838479" y="10.0351448" z="1.3" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" PolicyID="0" radius="0.33" prefered_speed="1.1" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m017" radius="0.33" visualVariation="1" animationOffset="0.665448666" heightOffset="-0.0310629122">
+        <Position x="3.93453383" y="9.148333" z="1.01" />
+        <Rotation x="-0" y="0" z="286.8109" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.24090385" accelerationMax="0.65071243" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="5.502147" y="-19.4097958" z="1.3" />
+              <Goal x="4.38011074" y="10.9836349" z="1.3" />
+              <Goal x="4.719196" y="-20.4624634" z="1.3" />
+              <Goal x="4.08355665" y="-19.5339432" z="1.3" />
+              <Goal x="5.817947" y="-20.6762371" z="1.3" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" PolicyID="0" radius="0.33" prefered_speed="1.1" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f018" radius="0.33" visualVariation="3" animationOffset="0.437606275" heightOffset="-0.03810114">
+        <Position x="3.060418" y="9.097033" z="1.01" />
+        <Rotation x="0" y="-0" z="98.0208054" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.26559174" accelerationMax="0.7025764" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="5.204785" y="-19.4567776" z="1.3" />
+              <Goal x="-17.3157558" y="-6.4455266" z="1.3" />
+              <Goal x="4.86719" y="9.822526" z="1.3" />
+              <Goal x="-16.3643951" y="-8.369785" z="1.3" />
+              <Goal x="4.78091764" y="-20.4427452" z="1.3" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" PolicyID="0" radius="0.33" prefered_speed="1.1" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f020" radius="0.33" visualVariation="0" animationOffset="0.405553877" heightOffset="-0.0302846767">
+        <Position x="2.630343" y="7.5772934" z="1.01" />
+        <Rotation x="-0" y="0" z="304.752319" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.2772671" accelerationMax="0.9167785" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="4.600686" y="-20.3381729" z="1.3" />
+              <Goal x="2.61524844" y="10.1769485" z="1.3" />
+              <Goal x="6.465793" y="-19.82965" z="1.3" />
+              <Goal x="-18.497448" y="-8.700374" z="1.3" />
+              <Goal x="6.812475" y="-21.1577721" z="1.3" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" PolicyID="0" radius="0.33" prefered_speed="1.1" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m017" radius="0.33" visualVariation="5" animationOffset="0.409055054" heightOffset="-0.0325811766">
+        <Position x="2.593515" y="8.691681" z="1.01" />
+        <Rotation x="-0" y="0" z="253.20752" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.14612532" accelerationMax="0.8358297" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="3.10199213" y="9.889091" z="1.3" />
+              <Goal x="-17.4989414" y="-7.31134653" z="1.3" />
+              <Goal x="-18.7833385" y="-6.959641" z="1.3" />
+              <Goal x="2.75290823" y="9.056761" z="1.3" />
+              <Goal x="4.368124" y="10.4240112" z="1.3" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" PolicyID="0" radius="0.33" prefered_speed="1.1" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f017" radius="0.33" visualVariation="5" animationOffset="0.153379917" heightOffset="0.0431928374">
+        <Position x="6.38425064" y="-22.0271664" z="1.01" />
+        <Rotation x="-0" y="0" z="281.362244" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.18026686" accelerationMax="0.645890832" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="5.39798641" y="-20.7861786" z="1.3" />
+              <Goal x="4.543758" y="9.193642" z="1.3" />
+              <Goal x="5.72648525" y="-20.3776855" z="1.3" />
+              <Goal x="3.24891758" y="9.388309" z="1.3" />
+              <Goal x="4.65204334" y="8.964166" z="1.3" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" PolicyID="0" radius="0.33" prefered_speed="1.1" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f018" radius="0.33" visualVariation="1" animationOffset="0.444188058" heightOffset="-0.0145176109">
+        <Position x="3.26387548" y="-19.9905262" z="1.01" />
+        <Rotation x="-0" y="0" z="353.877838" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.30734313" accelerationMax="0.6607472" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="5.442941" y="-19.3483143" z="1.3" />
+              <Goal x="6.128684" y="-19.7350483" z="1.3" />
+              <Goal x="-18.5783463" y="-6.9965" z="1.3" />
+              <Goal x="4.425571" y="8.641364" z="1.3" />
+              <Goal x="5.496984" y="-20.5393372" z="1.3" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" PolicyID="0" radius="0.33" prefered_speed="1.1" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f019" radius="0.33" visualVariation="7" animationOffset="0.2225002" heightOffset="0.0314537771">
+        <Position x="7.439833" y="-20.2207832" z="1.01" />
+        <Rotation x="-0" y="0" z="330.489777" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="0.983069241" accelerationMax="0.643383443" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="4.59502459" y="8.911363" z="1.3" />
+              <Goal x="-18.2814388" y="-6.45767164" z="1.3" />
+              <Goal x="5.13353825" y="-21.239418" z="1.3" />
+              <Goal x="5.113963" y="10.7420578" z="1.3" />
+              <Goal x="6.517143" y="-20.0845528" z="1.3" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" PolicyID="0" radius="0.33" prefered_speed="1.1" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f018" radius="0.33" visualVariation="2" animationOffset="0.009216189" heightOffset="0.04133557">
+        <Position x="3.07960224" y="-19.184042" z="1.01" />
+        <Rotation x="-0" y="0" z="219.505951" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.00180268" accelerationMax="0.6874274" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="-16.185545" y="-6.2761426" z="1.3" />
+              <Goal x="4.89226055" y="9.892248" z="1.3" />
+              <Goal x="4.27291775" y="10.1758776" z="1.3" />
+              <Goal x="-16.6817741" y="-6.976888" z="1.3" />
+              <Goal x="-16.1630039" y="-7.469567" z="1.3" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" PolicyID="0" radius="0.33" prefered_speed="1.1" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f020" radius="0.33" visualVariation="8" animationOffset="0.09352577" heightOffset="0.00421008468">
+        <Position x="6.812468" y="-20.73724" z="1.01" />
+        <Rotation x="-0" y="0" z="328.5713" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.02247226" accelerationMax="0.9381111" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="6.137645" y="-20.5908" z="1.3" />
+              <Goal x="4.43415356" y="8.94529" z="1.3" />
+              <Goal x="4.89122868" y="-19.2690411" z="1.3" />
+              <Goal x="-17.55645" y="-7.38644028" z="1.3" />
+              <Goal x="6.75802326" y="-19.1442814" z="1.3" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" PolicyID="0" radius="0.33" prefered_speed="1.1" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m020" radius="0.33" visualVariation="7" animationOffset="0.09718692" heightOffset="-0.00313887">
+        <Position x="7.20687056" y="-18.7165413" z="1.01" />
+        <Rotation x="-0" y="0" z="249.67038" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="0.908423841" accelerationMax="0.8048855" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="-18.9096088" y="-8.596916" z="1.3" />
+              <Goal x="5.73010874" y="-20.7515011" z="1.3" />
+              <Goal x="4.249546" y="-21.54539" z="1.3" />
+              <Goal x="4.61705256" y="9.315213" z="1.3" />
+              <Goal x="6.51055956" y="-19.079998" z="1.3" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" PolicyID="0" radius="0.33" prefered_speed="1.1" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m018" radius="0.33" visualVariation="8" animationOffset="0.4520046" heightOffset="0.0331336372">
+        <Position x="6.092363" y="-17.1138687" z="1.01" />
+        <Rotation x="-0" y="0" z="273.857483" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="0.9032389" accelerationMax="0.69456774" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="4.94962454" y="10.1189137" z="1.3" />
+              <Goal x="4.6592555" y="-20.4084034" z="1.3" />
+              <Goal x="-17.5833454" y="-7.95187473" z="1.3" />
+              <Goal x="4.97876549" y="-20.1180859" z="1.3" />
+              <Goal x="3.99950767" y="10.138216" z="1.3" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" PolicyID="0" radius="0.33" prefered_speed="1.1" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f019" radius="0.33" visualVariation="4" animationOffset="0.7952814" heightOffset="0.0205375068">
+        <Position x="8.096854" y="-20.2977638" z="1.01" />
+        <Rotation x="-0" y="0" z="319.710144" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.12835658" accelerationMax="0.7287119" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="2.41935587" y="11.0219021" z="1.3" />
+              <Goal x="-18.1031322" y="-6.39167356" z="1.3" />
+              <Goal x="6.57136" y="-21.3315563" z="1.3" />
+              <Goal x="4.11130047" y="-21.1122417" z="1.3" />
+              <Goal x="-18.600666" y="-7.09582472" z="1.3" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" PolicyID="0" radius="0.33" prefered_speed="1.1" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f018" radius="0.33" visualVariation="2" animationOffset="0.8383266" heightOffset="-0.03413787">
+        <Position x="5.271954" y="-17.7261372" z="1.01" />
+        <Rotation x="0" y="-0" z="162.120026" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="0.905249834" accelerationMax="0.682131469" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="2.675244" y="10.1623869" z="1.3" />
+              <Goal x="6.47586536" y="-19.6197548" z="1.3" />
+              <Goal x="4.600079" y="-21.4485912" z="1.3" />
+              <Goal x="4.32280636" y="-21.2612858" z="1.3" />
+              <Goal x="6.546109" y="-19.3171558" z="1.3" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" PolicyID="0" radius="0.33" prefered_speed="1.1" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m018" radius="0.33" visualVariation="7" animationOffset="0.781445265" heightOffset="-0.0297691338">
+        <Position x="5.00164938" y="-20.25009" z="1.01" />
+        <Rotation x="0" y="-0" z="6.009435" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.22770548" accelerationMax="0.8227583" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="6.661044" y="-19.8292351" z="1.3" />
+              <Goal x="6.124636" y="-19.7863426" z="1.3" />
+              <Goal x="-16.2195911" y="-7.246606" z="1.3" />
+              <Goal x="6.68707228" y="-21.5737228" z="1.3" />
+              <Goal x="6.65025425" y="-20.9178753" z="1.3" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" PolicyID="0" radius="0.33" prefered_speed="1.1" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m017" radius="0.33" visualVariation="7" animationOffset="0.395655334" heightOffset="-0.006816346">
+        <Position x="-18.1842613" y="-6.77098846" z="1.01" />
+        <Rotation x="-0" y="0" z="349.192871" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.3019942" accelerationMax="0.7468224" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="5.08445549" y="-21.1570225" z="1.3" />
+              <Goal x="-18.6608372" y="-6.8596735" z="1.3" />
+              <Goal x="-17.8237667" y="-8.362579" z="1.3" />
+              <Goal x="2.47456074" y="11.2130709" z="1.3" />
+              <Goal x="6.71631145" y="-20.0579433" z="1.3" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" PolicyID="0" radius="0.33" prefered_speed="1.1" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f017" radius="0.33" visualVariation="6" animationOffset="0.0585662127" heightOffset="0.0240772478">
+        <Position x="-18.7536144" y="-8.58184052" z="1.01" />
+        <Rotation x="0" y="-0" z="137.680511" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="0.8065207" accelerationMax="0.8447869" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="-16.7495422" y="-6.86761236" z="1.3" />
+              <Goal x="-18.1222839" y="-8.436113" z="1.3" />
+              <Goal x="5.09533548" y="-20.564085" z="1.3" />
+              <Goal x="-18.1317539" y="-7.356084" z="1.3" />
+              <Goal x="3.84656525" y="10.0052614" z="1.3" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" PolicyID="0" radius="0.33" prefered_speed="1.1" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f019" radius="0.33" visualVariation="7" animationOffset="0.544061959" heightOffset="0.03515998">
+        <Position x="-16.07858" y="-8.632507" z="1.01" />
+        <Rotation x="-0" y="0" z="212.51474" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.06998742" accelerationMax="0.623696744" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="4.168365" y="10.4026852" z="1.3" />
+              <Goal x="4.400323" y="10.3315029" z="1.3" />
+              <Goal x="-16.7994976" y="-8.200771" z="1.3" />
+              <Goal x="4.28169155" y="10.52198" z="1.3" />
+              <Goal x="-17.2096786" y="-7.38442" z="1.3" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" PolicyID="0" radius="0.33" prefered_speed="1.1" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f017" radius="0.33" visualVariation="8" animationOffset="0.787428141" heightOffset="0.038687598">
+        <Position x="-17.0878983" y="-9.082101" z="1.01" />
+        <Rotation x="-0" y="0" z="280.718872" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="0.9319629" accelerationMax="0.745821834" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="3.223183" y="10.95663" z="1.3" />
+              <Goal x="3.52731538" y="9.277182" z="1.3" />
+              <Goal x="4.581489" y="-21.55013" z="1.3" />
+              <Goal x="6.15905" y="-21.4637833" z="1.3" />
+              <Goal x="3.03767729" y="10.016696" z="1.3" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" PolicyID="0" radius="0.33" prefered_speed="1.1" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f020" radius="0.33" visualVariation="7" animationOffset="0.9625292" heightOffset="-0.0405439176">
+        <Position x="-14.9194231" y="-7.41632843" z="1.01" />
+        <Rotation x="0" y="-0" z="151.577454" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="0.8397381" accelerationMax="0.837934434" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="-18.7139359" y="-6.264521" z="1.3" />
+              <Goal x="-18.9090881" y="-7.45569372" z="1.3" />
+              <Goal x="4.18934536" y="10.162735" z="1.3" />
+              <Goal x="4.65790462" y="-20.442421" z="1.3" />
+              <Goal x="6.449761" y="-20.063797" z="1.3" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" PolicyID="0" radius="0.33" prefered_speed="1.1" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f019" radius="0.33" visualVariation="9" animationOffset="0.8501407" heightOffset="0.0459087975">
+        <Position x="-15.9908695" y="-6.20246029" z="1.01" />
+        <Rotation x="-0" y="0" z="277.187347" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="0.9839699" accelerationMax="0.765544534" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="4.773419" y="-19.7913055" z="1.3" />
+              <Goal x="-17.250515" y="-8.35223" z="1.3" />
+              <Goal x="4.601941" y="-21.0215378" z="1.3" />
+              <Goal x="-16.7463627" y="-7.377137" z="1.3" />
+              <Goal x="4.285754" y="9.607989" z="1.3" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" PolicyID="0" radius="0.33" prefered_speed="1.1" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m020" radius="0.33" visualVariation="1" animationOffset="0.8355335" heightOffset="-0.04561622">
+        <Position x="-19.61866" y="-8.9272995" z="1.01" />
+        <Rotation x="-0" y="0" z="351.829376" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="0.8415782" accelerationMax="0.7443117" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="2.81936932" y="9.59028" z="1.3" />
+              <Goal x="-18.7726727" y="-7.745359" z="1.3" />
+              <Goal x="-16.6597" y="-6.41935968" z="1.3" />
+              <Goal x="4.70153236" y="9.504871" z="1.3" />
+              <Goal x="3.19109583" y="8.95509052" z="1.3" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" PolicyID="0" radius="0.33" prefered_speed="1.1" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f018" radius="0.33" visualVariation="8" animationOffset="0.468905866" heightOffset="0.0483501665">
+        <Position x="-14.8535032" y="-8.012846" z="1.01" />
+        <Rotation x="0" y="-0" z="123.3392" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.228826" accelerationMax="0.911203265" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="-17.4895515" y="-6.68124151" z="1.3" />
+              <Goal x="5.85830975" y="-19.08536" z="1.3" />
+              <Goal x="4.516581" y="-19.2993717" z="1.3" />
+              <Goal x="-16.5709229" y="-7.46236467" z="1.3" />
+              <Goal x="6.10050726" y="-19.4899445" z="1.3" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" PolicyID="0" radius="0.33" prefered_speed="1.1" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f020" radius="0.33" visualVariation="6" animationOffset="0.1807934" heightOffset="-0.0460704081">
+        <Position x="-17.4971638" y="-10.5977278" z="1.01" />
+        <Rotation x="-0" y="0" z="303.302" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="0.9013089" accelerationMax="0.9144925" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="-16.6885414" y="-8.301358" z="1.3" />
+              <Goal x="4.624762" y="-20.2562618" z="1.3" />
+              <Goal x="4.730537" y="9.861489" z="1.3" />
+              <Goal x="4.05088663" y="11.1861458" z="1.3" />
+              <Goal x="5.31646061" y="-20.411129" z="1.3" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" PolicyID="0" radius="0.33" prefered_speed="1.1" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m020" radius="0.33" visualVariation="8" animationOffset="0.6197979" heightOffset="0.04191431">
+        <Position x="-17.8136749" y="-8.543206" z="1.01" />
+        <Rotation x="-0" y="0" z="192.432724" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.21040893" accelerationMax="0.6071686" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="5.50880671" y="-19.73147" z="1.3" />
+              <Goal x="5.49923038" y="-21.57066" z="1.3" />
+              <Goal x="-17.21943" y="-7.35374641" z="1.3" />
+              <Goal x="-16.7929783" y="-8.526649" z="1.3" />
+              <Goal x="4.4199357" y="11.143981" z="1.3" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" PolicyID="0" radius="0.33" prefered_speed="1.1" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+  </agents>
+  <obstacles />
+</Trial>

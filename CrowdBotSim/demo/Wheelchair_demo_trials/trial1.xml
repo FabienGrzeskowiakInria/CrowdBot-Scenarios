@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trial xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <scene meshName="Rooms">
+    <Position x="3.084186" y="-4.96328" z="2.06106949" />
+    <Rotation x="0" y="0" z="0" />
+    <recordingFile>Output_{USER}_{ITT}.csv</recordingFile>
+    <endingConditions>
+      <condition parameter="time" test="less" value="0" />
+    </endingConditions>
+  </scene>
+  <player>
+    <TrialCamPlayer mesh="CamPlayer" radius="0.33" in_sim="false">
+      <Position x="4.96" y="3.65" z="14.8200006" />
+      <Rotation x="-81.211525" y="355.811829" z="174.11763" />
+      <controlLaw>
+        <LawCamControlEditor lookSpeedH="2" lookSpeedV="2" zoomSpeed="8" dragSpeed="12" />
+      </controlLaw>
+    </TrialCamPlayer>
+  </player>
+  <robots>
+    <robot>
+      <TrialRegularRobot mesh="Wheelchair" radius="1" in_sim="true">
+        <Position x="4.41" y="-1.55" z="0.01" />
+        <Rotation x="0" y="0" z="0" />
+        <controlLaw>
+          <LawFake />
+        </controlLaw>
+      </TrialRegularRobot>
+    </robot>
+  </robots>
+  <agents>
+    <agent>
+      <TrialRegularAgent mesh="Female_Adult_01" radius="0.33" visualVariation="2" animationOffset="0.04328692" heightOffset="-0.0480857">
+        <Position x="8.91" y="1.45000029" z="0.005" />
+        <Rotation x="-0" y="0" z="303.357239" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.21280491" accelerationMax="3.402823E+38" angularSpeed="3.402823E+38" reachedDist="1.5" isLooping="true">
+            <Goals>
+              <Goal x="1.44883013" y="4.511073" z="0.01" />
+              <Goal x="-0.3221655" y="4.7616415" z="0.01" />
+              <Goal x="0.247063279" y="1.30723882" z="0.01" />
+              <Goal x="6.834222" y="0.204934359" z="0.01" />
+              <Goal x="2.1593914" y="0.3179586" z="0.01" />
+              <Goal x="-0.6693666" y="2.828321" z="0.01" />
+              <Goal x="-1.31080222" y="0.9933413" z="0.01" />
+              <Goal x="8.988786" y="4.873042" z="0.01" />
+              <Goal x="8.257856" y="0.938962" z="0.01" />
+              <Goal x="7.27792072" y="4.66258574" z="0.01" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" PolicyID="0" radius="0.5" prefered_speed="1.38501167" max_speed="1.5" max_acceleration="3.402823E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="Male_Adult_01" radius="0.33" visualVariation="2" animationOffset="0.4519313" heightOffset="0.009001799">
+        <Position x="1.13639951" y="0.479260921" z="0.005" />
+        <Rotation x="-0" y="0" z="358.9468" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.48278511" accelerationMax="3.402823E+38" angularSpeed="3.402823E+38" reachedDist="1.5" isLooping="true">
+            <Goals>
+              <Goal x="7.80770969" y="3.8060286" z="0.01" />
+              <Goal x="-1.45299864" y="4.09073734" z="0.01" />
+              <Goal x="-1.60091519" y="3.11337113" z="0.01" />
+              <Goal x="8.454992" y="2.36134839" z="0.01" />
+              <Goal x="0.930091858" y="4.08564043" z="0.01" />
+              <Goal x="-1.16410267" y="3.9788835" z="0.01" />
+              <Goal x="5.838041" y="1.589051" z="0.01" />
+              <Goal x="6.773922" y="2.96458673" z="0.01" />
+              <Goal x="-0.401171327" y="2.44515252" z="0.01" />
+              <Goal x="10.0645218" y="0.206750631" z="0.01" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" PolicyID="0" radius="0.5" prefered_speed="1.22599542" max_speed="1.5" max_acceleration="3.402823E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="Male_Adult_01" radius="0.33" visualVariation="0" animationOffset="0.8545604" heightOffset="0.0386089571">
+        <Position x="6.385772" y="1.65131426" z="0.005" />
+        <Rotation x="0" y="-0" z="36.4028969" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.06759322" accelerationMax="3.402823E+38" angularSpeed="3.402823E+38" reachedDist="1.5" isLooping="true">
+            <Goals>
+              <Goal x="6.53560638" y="0.283267736" z="0.01" />
+              <Goal x="3.03760767" y="1.90964079" z="0.01" />
+              <Goal x="3.35810876" y="4.426876" z="0.01" />
+              <Goal x="7.90796041" y="4.78424931" z="0.01" />
+              <Goal x="-0.462042451" y="1.13269353" z="0.01" />
+              <Goal x="-0.474396944" y="0.945443869" z="0.01" />
+              <Goal x="-1.77526426" y="3.73929453" z="0.01" />
+              <Goal x="9.175404" y="4.914389" z="0.01" />
+              <Goal x="9.771319" y="1.82878137" z="0.01" />
+              <Goal x="1.047703" y="2.21279955" z="0.01" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" PolicyID="0" radius="0.5" prefered_speed="1.38344574" max_speed="1.5" max_acceleration="3.402823E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="Female_Adult_01" radius="0.33" visualVariation="3" animationOffset="0.836021543" heightOffset="-0.0162890367">
+        <Position x="4.734064" y="2.30097723" z="0.005" />
+        <Rotation x="-0" y="0" z="210.752045" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.39529335" accelerationMax="3.402823E+38" angularSpeed="3.402823E+38" reachedDist="1.5" isLooping="true">
+            <Goals>
+              <Goal x="10.0968046" y="2.71843338" z="0.01" />
+              <Goal x="2.04982" y="4.377885" z="0.01" />
+              <Goal x="-0.6581476" y="0.793460369" z="0.01" />
+              <Goal x="1.17992663" y="2.676801" z="0.01" />
+              <Goal x="0.2652853" y="1.83804607" z="0.01" />
+              <Goal x="10.1325932" y="4.514013" z="0.01" />
+              <Goal x="9.257713" y="4.32057953" z="0.01" />
+              <Goal x="8.978804" y="4.251957" z="0.01" />
+              <Goal x="10.11322" y="3.76344633" z="0.01" />
+              <Goal x="6.9444375" y="0.904461265" z="0.01" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" PolicyID="0" radius="0.5" prefered_speed="1.19295561" max_speed="1.5" max_acceleration="3.402823E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="Female_Adult_15" radius="0.33" visualVariation="1" animationOffset="0.5255788" heightOffset="0.007379763">
+        <Position x="3.06129622" y="3.9385426" z="0.005" />
+        <Rotation x="-0" y="0" z="354.908356" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.52862573" accelerationMax="3.402823E+38" angularSpeed="3.402823E+38" reachedDist="1.5" isLooping="true">
+            <Goals>
+              <Goal x="0.7913715" y="2.40853882" z="0.01" />
+              <Goal x="3.35435486" y="3.84501886" z="0.01" />
+              <Goal x="0.53416574" y="3.437502" z="0.01" />
+              <Goal x="-0.7298453" y="4.8789525" z="0.01" />
+              <Goal x="-0.270181835" y="0.08636427" z="0.01" />
+              <Goal x="0.6150992" y="2.430243" z="0.01" />
+              <Goal x="9.541231" y="2.36120629" z="0.01" />
+              <Goal x="-1.72556376" y="2.16802549" z="0.01" />
+              <Goal x="-1.02741253" y="1.37921941" z="0.01" />
+              <Goal x="-0.9306849" y="1.46631277" z="0.01" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" PolicyID="0" radius="0.5" prefered_speed="1.37920249" max_speed="1.5" max_acceleration="3.402823E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="Male_Adult_01" radius="0.33" visualVariation="0" animationOffset="0.301540077" heightOffset="-0.0216144137">
+        <Position x="0.440000057" y="4.51" z="0.005" />
+        <Rotation x="0" y="-0" z="103.229195" />
+        <controlLaw>
+          <LawStanding animationType="1">
+            <LookAt x="-0" y="0" z="0" />
+          </LawStanding>
+        </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="Male_Adult_01" radius="0.33" visualVariation="1" animationOffset="0.893440247" heightOffset="-0.03645135">
+        <Position x="-0.120000124" y="3.47000027" z="0.005" />
+        <Rotation x="0" y="-0" z="95.72801" />
+        <controlLaw>
+          <LawStanding animationType="1">
+            <LookAt x="40" y="40" z="0" />
+          </LawStanding>
+        </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="Female_Adult_15" radius="0.33" visualVariation="3" animationOffset="0.8650818" heightOffset="-0.03460652">
+        <Position x="1.1" y="3.51000023" z="0.005" />
+        <Rotation x="0" y="-0" z="27.3156548" />
+        <controlLaw>
+          <LawStanding animationType="1">
+            <LookAt x="-40" y="40" z="0" />
+          </LawStanding>
+        </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+  </agents>
+  <obstacles>
+    <obstacle>
+      <TrialObstacle>
+        <Lines />
+        <Points>
+          <Point x1="-6.002" y1="-1.809999" thickness="1" />
+        </Points>
+      </TrialObstacle>
+    </obstacle>
+    <obstacle>
+      <TrialObstacle>
+        <Lines />
+        <Points>
+          <Point x1="-3.50199962" y1="6.940002" thickness="1" />
+        </Points>
+      </TrialObstacle>
+    </obstacle>
+    <obstacle>
+      <TrialObstacle>
+        <Lines />
+        <Points>
+          <Point x1="-11.7520008" y1="-1.559998" thickness="1" />
+        </Points>
+      </TrialObstacle>
+    </obstacle>
+    <obstacle>
+      <TrialObstacle>
+        <Lines />
+        <Points>
+          <Point x1="-11.7520008" y1="6.940002" thickness="1" />
+        </Points>
+      </TrialObstacle>
+    </obstacle>
+    <obstacle>
+      <TrialObstacle>
+        <Lines />
+        <Points>
+          <Point x1="2.74800014" y1="-1.559999" thickness="1" />
+        </Points>
+      </TrialObstacle>
+    </obstacle>
+    <obstacle>
+      <TrialObstacle>
+        <Lines />
+        <Points>
+          <Point x1="2.748001" y1="6.940002" thickness="1" />
+        </Points>
+      </TrialObstacle>
+    </obstacle>
+    <obstacle>
+      <TrialObstacle>
+        <Lines />
+        <Points>
+          <Point x1="-5.50199938" y1="6.940002" thickness="1" />
+        </Points>
+      </TrialObstacle>
+    </obstacle>
+    <obstacle>
+      <TrialObstacle>
+        <Lines />
+        <Points>
+          <Point x1="-3.002" y1="-1.81" thickness="1" />
+        </Points>
+      </TrialObstacle>
+    </obstacle>
+    <obstacle>
+      <TrialObstacle>
+        <Lines>
+          <Line x1="-6.5" y1="-14.3149986" x2="-5.5" y2="-13.3149986" thickness="1" />
+        </Lines>
+        <Points />
+      </TrialObstacle>
+    </obstacle>
+    <obstacle>
+      <TrialObstacle>
+        <Lines>
+          <Line x1="-0.625000954" y1="-14.4399986" x2="0.374999046" y2="-13.4399986" thickness="1" />
+        </Lines>
+        <Points />
+      </TrialObstacle>
+    </obstacle>
+    <obstacle>
+      <TrialObstacle>
+        <Lines>
+          <Line x1="-3" y1="-13.8149986" x2="-3" y2="-13.8149986" thickness="1" />
+        </Lines>
+        <Points />
+      </TrialObstacle>
+    </obstacle>
+    <obstacle>
+      <TrialObstacle>
+        <Lines>
+          <Line x1="-9" y1="-13.8149986" x2="-9" y2="-13.8149986" thickness="1" />
+        </Lines>
+        <Points />
+      </TrialObstacle>
+    </obstacle>
+    <obstacle>
+      <TrialObstacle>
+        <Lines>
+          <Line x1="-0.625" y1="-8.439999" x2="0.375" y2="-7.439999" thickness="1" />
+        </Lines>
+        <Points />
+      </TrialObstacle>
+    </obstacle>
+    <obstacle>
+      <TrialObstacle>
+        <Lines>
+          <Line x1="-9.375002" y1="-14.4399986" x2="-8.375002" y2="-13.4399986" thickness="1" />
+        </Lines>
+        <Points />
+      </TrialObstacle>
+    </obstacle>
+    <obstacle>
+      <TrialObstacle>
+        <Lines>
+          <Line x1="-9.375" y1="-8.439999" x2="-8.375" y2="-7.439999" thickness="1" />
+        </Lines>
+        <Points />
+      </TrialObstacle>
+    </obstacle>
+    <obstacle>
+      <TrialObstacle>
+        <Lines>
+          <Line x1="-8.875" y1="-7.939999" x2="-8.875" y2="-7.939999" thickness="1" />
+        </Lines>
+        <Points />
+      </TrialObstacle>
+    </obstacle>
+    <obstacle>
+      <TrialObstacle>
+        <Lines>
+          <Line x1="-3" y1="-4.814997" x2="-3" y2="-4.814997" thickness="1" />
+        </Lines>
+        <Points />
+      </TrialObstacle>
+    </obstacle>
+    <obstacle>
+      <TrialObstacle>
+        <Lines>
+          <Line x1="-9" y1="-4.814997" x2="-9" y2="-4.814997" thickness="1" />
+        </Lines>
+        <Points />
+      </TrialObstacle>
+    </obstacle>
+    <obstacle>
+      <TrialObstacle>
+        <Lines>
+          <Line x1="-0.124999978" y1="-7.939999" x2="-0.125000015" y2="-7.939999" thickness="1" />
+        </Lines>
+        <Points />
+      </TrialObstacle>
+    </obstacle>
+    <obstacle>
+      <TrialObstacle>
+        <Lines>
+          <Line x1="-2.50200033" y1="-4.31" x2="-3.50200033" y2="-5.31" thickness="1" />
+        </Lines>
+        <Points />
+      </TrialObstacle>
+    </obstacle>
+    <obstacle>
+      <TrialObstacle>
+        <Lines>
+          <Line x1="2.998001" y1="4.190002" x2="2.998001" y2="4.190002" thickness="1" />
+        </Lines>
+        <Points />
+      </TrialObstacle>
+    </obstacle>
+    <obstacle>
+      <TrialObstacle>
+        <Lines>
+          <Line x1="-11.5020008" y1="4.690002" x2="-12.5020008" y2="3.690002" thickness="1" />
+        </Lines>
+        <Points />
+      </TrialObstacle>
+    </obstacle>
+    <obstacle>
+      <TrialObstacle>
+        <Lines>
+          <Line x1="-6.50199938" y1="6.690002" x2="-5.50199938" y2="7.690002" thickness="1" />
+        </Lines>
+        <Points />
+      </TrialObstacle>
+    </obstacle>
+    <obstacle>
+      <TrialObstacle>
+        <Lines>
+          <Line x1="-0.00199887948" y1="7.190002" x2="-0.00199892325" y2="7.190002" thickness="1" />
+        </Lines>
+        <Points />
+      </TrialObstacle>
+    </obstacle>
+    <obstacle>
+      <TrialObstacle>
+        <Lines>
+          <Line x1="-12.5020008" y1="3.690002" x2="-11.5020008" y2="4.690002" thickness="1" />
+        </Lines>
+        <Points />
+      </TrialObstacle>
+    </obstacle>
+    <obstacle>
+      <TrialObstacle>
+        <Lines>
+          <Line x1="3.49800014" y1="1.690001" x2="2.49800014" y2="0.690001" thickness="1" />
+        </Lines>
+        <Points />
+      </TrialObstacle>
+    </obstacle>
+    <obstacle>
+      <TrialObstacle>
+        <Lines>
+          <Line x1="-9.002001" y1="-1.80999827" x2="-9.002001" y2="-1.8099978" thickness="1" />
+        </Lines>
+        <Points />
+      </TrialObstacle>
+    </obstacle>
+    <obstacle>
+      <TrialObstacle>
+        <Lines>
+          <Line x1="-3.50200033" y1="-5.31" x2="-2.50200033" y2="-4.31" thickness="1" />
+        </Lines>
+        <Points />
+      </TrialObstacle>
+    </obstacle>
+    <obstacle>
+      <TrialObstacle>
+        <Lines>
+          <Line x1="-9.002001" y1="-1.809998" x2="-9.002001" y2="-1.809998" thickness="1" />
+        </Lines>
+        <Points />
+      </TrialObstacle>
+    </obstacle>
+    <obstacle>
+      <TrialObstacle>
+        <Lines>
+          <Line x1="-6.00199938" y1="7.190002" x2="-6.00199938" y2="7.190002" thickness="1" />
+        </Lines>
+        <Points />
+      </TrialObstacle>
+    </obstacle>
+    <obstacle>
+      <TrialObstacle>
+        <Lines>
+          <Line x1="-0.001998669" y1="7.190002" x2="-0.00199913373" y2="7.190002" thickness="1" />
+        </Lines>
+        <Points />
+      </TrialObstacle>
+    </obstacle>
+  </obstacles>
+</Trial>
